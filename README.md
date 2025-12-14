@@ -26,15 +26,6 @@ This repository is a **concept-first, systems-aware exploration** of tokenizatio
 
 ---
 
-## 🗺️ Learning Path (Designed, Not Random)
-
-This repository is intentionally structured as a **progressive journey** — each file answers a limitation introduced by the previous one.
-
-```
-Language → Tokens → Subwords → Bytes → Production Systems
-```
-
----
 
 ## 📂 Repository Structure
 
