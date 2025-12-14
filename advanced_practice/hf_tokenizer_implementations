@@ -1,0 +1,90 @@
+1. Hugging Face Tokenizer Implementations
+1.1 Overview of Tokenizer Architectures
+
+Hugging Face provides a unified tokenizers library written in Rust (core) with Python bindings for performance and safety. Tokenizers convert raw text into discrete units (tokens) optimized for neural language modeling.
+
+Key design goals:
+
+Deterministic tokenization
+
+Vocabulary compression
+
+Fast CPU/GPU throughput
+
+Language-agnostic extensibility
+
+1.2 Major Tokenizer Types
+Byte Pair Encoding (BPE)
+
+Iteratively merges frequent byte/character pairs
+
+Used in GPT-2, RoBERTa
+
+Strengths: compact vocabulary, deterministic
+
+Weakness: struggles with morphologically rich languages
+
+Algorithm Steps:
+
+Initialize vocabulary with bytes
+
+Count frequent adjacent pairs
+
+Merge highest-frequency pair
+
+Repeat until vocab limit reached
+
+WordPiece
+
+Likelihood-based merge strategy
+
+Used in BERT
+
+Uses ## prefix to denote subwords
+
+Key Advantage: probabilistic merging improves semantic consistency
+
+Unigram Language Model
+
+Probabilistic model selecting best subword segmentation
+
+Used in SentencePiece
+
+Supports sampling-based regularization
+
+Key Insight: Tokenization as a compression optimization problem
+
+Byte-Level BPE
+
+Operates directly on UTF-8 bytes
+
+No OOV tokens
+
+Used in GPT-2, GPT-3
+
+1.3 Hugging Face Tokenizer Pipeline
+Text → Normalizer → PreTokenizer → Model → PostProcessor → IDs
+
+Normalizer: Unicode cleanup, lowercasing
+
+PreTokenizer: splits text (whitespace, bytes)
+
+Model: BPE / Unigram / WordPiece
+
+PostProcessor: special tokens ([CLS], [SEP])
+
+1.4 Custom Tokenizer Training (HF)
+from tokenizers import Tokenizer, models, trainers, pre_tokenizers
+
+
+tokenizer = Tokenizer(models.BPE())
+tokenizer.pre_tokenizer = pre_tokenizers.ByteLevel()
+trainer = trainers.BpeTrainer(vocab_size=32000)
+tokenizer.train(files=["data.txt"], trainer=trainer)
+1.5 Industrial Considerations
+
+Vocabulary size vs latency
+
+Backward compatibility
+
+Token stability across versions
