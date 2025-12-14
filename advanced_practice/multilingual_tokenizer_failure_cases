@@ -1,0 +1,47 @@
+3. Multilingual Tokenizer Failure Cases
+3.1 Language Coverage Problem
+
+Most tokenizers are English-biased, causing:
+
+Token explosion
+
+Semantic fragmentation
+
+Higher inference cost
+
+3.2 Common Failure Patterns
+Agglutinative Languages (Turkish, Tamil)
+
+Excessive subword splitting
+
+Indic Scripts
+
+Unicode normalization inconsistencies
+
+CJK Languages
+
+Character-level over-fragmentation
+
+3.3 Code-Switching Breakdown
+
+Example:
+
+"मैं AI engineer हूँ"
+
+Results in mixed-script fragmentation and inflated token counts
+
+3.4 Security & Bias Risks
+
+Higher cost for non-English users
+
+Cultural underrepresentation
+
+Prompt truncation bias
+
+3.5 Mitigation Strategies
+
+Language-balanced corpora
+
+Script-aware normalization
+
+Separate multilingual vocabularies
