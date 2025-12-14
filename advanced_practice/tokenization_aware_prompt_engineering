@@ -1,0 +1,42 @@
+4. Tokenization-Aware Prompt Engineering
+4.1 Why Tokenization Matters in Prompts
+
+Prompt effectiveness is bounded by token budgets and segmentation behavior.
+
+4.2 Prompt Inflation Traps
+
+Bad Prompt:
+
+Explain in extreme detail everything about...
+
+Results in early truncation
+
+4.3 Token-Efficient Prompt Design
+
+Principles:
+
+Prefer shorter synonyms
+
+Avoid redundant adjectives
+
+Use structured bullets
+
+4.4 Token-Aware Few-Shot Design
+
+Examples consume tokens linearly
+
+Compress examples
+
+Use placeholders
+
+4.5 Advanced Techniques
+Token Steering
+
+Choosing words that map to fewer tokens
+
+Boundary Alignment
+
+Aligning semantic chunks with token boundaries
+
+
+Prompt efficiency scales model capability
