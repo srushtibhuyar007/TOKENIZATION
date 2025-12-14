@@ -8,21 +8,6 @@ This repository is a **concept-first, systems-aware exploration** of tokenizatio
 
 ---
 
-## 🔍 Why Tokenization Deserves Its Own Repository
-
-Most NLP resources treat tokenization as a preprocessing footnote. In reality, tokenization:
-
-* Defines what a model *can* and *cannot* express
-* Controls vocabulary size, memory footprint, and inference speed
-* Influences fairness across languages and scripts
-* Determines robustness to noise, misspellings, and adversarial inputs
-
-**In short:** tokenizer choices silently shape model behavior.
-
-This repository isolates tokenization as a **first-class system component**, not just a preprocessing step.
-
----
-
 ## 🧠 Tokenization in One Sentence
 
 > **Tokenization is the lossy compression of human language into a finite, learnable symbol space.**
@@ -71,10 +56,10 @@ TOKENIZATION/
 │   └─ Tokenization as a production constraint
 │
 └── infograph/
-    ├── LLM_TOKENIZATION.png
-    ├── TOKENIZATION_MODERN_APPROACHES.png
-    ├── Tokenization_Future_Trends.png
-    └── character_based_tokenization.png
+|   ├── LLM_TOKENIZATION.png
+|   ├── TOKENIZATION_MODERN_APPROACHES.png
+|   ├── Tokenization_Future_Trends.png
+|   └── character_based_tokenization.png
 └── advanced_practice/
     ├── hf_tokenizer_implementations.md
     ├── token_efficiency_benchmarks.md
