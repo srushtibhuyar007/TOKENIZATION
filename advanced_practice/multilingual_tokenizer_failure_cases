@@ -2,30 +2,20 @@
 
 Most tokenizers are English-biased, leading to:
 
-💥 Token Explosion
-
-🧩 Semantic Fragmentation
-
-💸 Higher Inference Cost
+:- Token Explosion
+:- Semantic Fragmentation
+:- Higher Inference Cost
 
 ⚠️ 3.2 Common Failure Patterns
-🧬 Agglutinative Languages (Turkish, Tamil)
-
-🔪 Excessive subword splitting
-
-📉 Loss of morphological meaning
-
-🪔 Indic Scripts
-
-⚠️ Unicode normalization inconsistencies
-
-🔄 Script-level ambiguity
-
-🈶 CJK Languages (Chinese, Japanese, Korean)
-
-🔠 Character-level over-fragmentation
-
-🐢 Longer sequence lengths
+:- Agglutinative Languages (Turkish, Tamil)
+:- Excessive subword splitting
+:- Loss of morphological meaning
+:- Indic Scripts
+:- Unicode normalization inconsistencies
+:- Script-level ambiguity
+:- CJK Languages (Chinese, Japanese, Korean)
+:- Character-level over-fragmentation
+:- Longer sequence lengths
 
 🔀 3.3 Code-Switching Breakdown
 
@@ -36,30 +26,20 @@ Example:
 
 Issues:
 
-🧩 Mixed-script fragmentation
-
-📈 Inflated token counts
-
-❌ Broken semantic continuity
+:- Mixed-script fragmentation
+:- Inflated token counts
+:- Broken semantic continuity
 
 🔐 3.4 Security & Bias Risks
-
-💸 Higher cost for non-English users
-
-🌐 Cultural underrepresentation
-
-✂️ Prompt truncation bias
-
-⚖️ Fairness & accessibility concerns
+:- Higher cost for non-English users
+:- Cultural underrepresentation
+:- Prompt truncation bias
+:- Fairness & accessibility concerns
 
 🛠️ 3.5 Mitigation Strategies
 
-📚 Language-balanced corpora
-
-🔎 Script-aware normalization
-
-🧠 Separate multilingual vocabularies
-
-🧩 Morphology-aware tokenization
-
-🧪 Token-efficiency benchmarking
+:- Language-balanced corpora
+:- Script-aware normalization
+:-  Separate multilingual vocabularies
+:-  Morphology-aware tokenization
+:-  Token-efficiency benchmarking
