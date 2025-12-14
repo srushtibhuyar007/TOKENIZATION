@@ -19,18 +19,6 @@ At its core, **tokenization** is the process of breaking down text into smaller 
 
 ---
 
-## 📘 About This Repository
-
-**TOKENIZATION: A Comprehensive Guide** is designed to help:
-
-* Students learning NLP fundamentals
-* ML engineers preparing for interviews
-* Researchers exploring LLM internals
-* Practitioners building real-world NLP systems
-
-The content emphasizes **conceptual clarity**, **practical relevance**, and **industry-aligned understanding**.
-
----
 
 ## 🚀 Getting Started
 
