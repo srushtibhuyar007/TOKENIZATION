@@ -75,6 +75,12 @@ TOKENIZATION/
     ├── TOKENIZATION_MODERN_APPROACHES.png
     ├── Tokenization_Future_Trends.png
     └── character_based_tokenization.png
+└── advanced_practice/
+    ├── hf_tokenizer_implementations.md
+    ├── token_efficiency_benchmarks.md
+    ├── multilingual_tokenizer_failure_cases.md
+    └── tokenization_aware_prompt_engineering.md
+
 ```
 
 ---
