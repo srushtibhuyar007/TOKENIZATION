@@ -1,0 +1,45 @@
+2. Token Efficiency Benchmarks
+2.1 What is Token Efficiency?
+
+Token efficiency measures how effectively a tokenizer compresses text:
+
+Efficiency = Information Content / Token Count
+
+Lower tokens → lower cost → longer context utilization
+
+2.2 Evaluation Metrics
+Metric	Description
+Avg Tokens / Sentence	Compression quality
+Tokens / Character	Density
+OOV Rate	Robustness
+Latency (ms)	Runtime efficiency
+2.3 Benchmark Setup
+
+Datasets:
+
+Wikipedia
+
+Code (GitHub)
+
+Multilingual corpora
+
+Tokenizers Compared:
+
+GPT-2 BPE
+
+SentencePiece Unigram
+
+WordPiece
+
+2.4 Sample Benchmark Results (Illustrative)
+Tokenizer	English	Hindi	Code
+GPT-2 BPE	1.2	2.8	1.1
+WordPiece	1.3	3.1	1.4
+Unigram	1.1	1.9	1.3
+2.5 Insights
+
+Byte-level tokenizers excel in code
+
+Unigram outperforms in morphologically rich languages
+
+Larger vocab ≠ better compression
